@@ -1,0 +1,13 @@
+{
+  "actions" : [
+    {
+      "type" : "SAY",
+      "params" : {
+        "text": "Hello World!"
+      }
+    },
+    {
+      "type" : "HANGUP"
+    }
+  ]
+}
