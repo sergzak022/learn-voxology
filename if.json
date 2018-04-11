@@ -1,7 +1,6 @@
 {
   "actions": [
 
-
     {
        "name": "rating",
        "type": "COLLECT",
@@ -14,9 +13,9 @@
          }
        ],
        "params": {
-         "finish_on_key": "pound",
+         "finish_on_key": "#",
          "num_digits": 1,
-         "timout": 5000
+         "timeout": 5000
        },
        "comment": "finish_on_key probably is not needed here"
     },
@@ -24,15 +23,14 @@
     {
       "type": "SAY",
       "params": {
-        "text": "You typed {{$keyPress}}"
+        "text": "You typed {{$keyPresses}}"
       }
     },
 
 
-
     {
        "type": "IF",
-       "condition": "$keyPress == '1'",
+       "condition": "$keyPresses == '1'",
        "then": [
          {
            "type": "SAY",
