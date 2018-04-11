@@ -23,7 +23,7 @@
     {
       "type": "SAY",
       "params": {
-        "text": "You typed {{$keyPresses}}"
+        "text": "You typed {{$keyPresses}}. I repreat, you pressed {{...$keyPresses}}"
       }
     },
 
