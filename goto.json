@@ -1,0 +1,29 @@
+{
+  "actions": [
+     {
+        "type": "SAY",
+        "params": {
+          "text": "Hey"
+        }
+     },
+     {
+        "type": "GOTO",
+        "comment": "Use goto to navigate to your label",
+        "params": {
+          "label": "my_label"
+        }
+     },
+     {
+        "type": "SAY",
+        "comment": "This SAY action will be skipped",
+        "params": {
+          "text": "You"
+        }
+     },
+     {
+        "type": "LABEL",
+        "comment": "This is a label to which you navigating",
+        "name": "my_label"
+     }
+  ]
+}

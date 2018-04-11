@@ -1,0 +1,59 @@
+{
+  "actions": [
+
+
+     {
+        "name": "rating",
+        "type": "COLLECT",
+        "actions": [
+          {
+            "type": "SAY",
+            "params": {
+              text: "Press one on your phone keypad"
+            }
+          }
+        ],
+        "params": {
+          "finish_on_key": "pound",
+          "num_digits": 1,
+          "timout": 5000
+        },
+        "comment": "finish_on_key probably is not needed here"
+     },
+
+
+
+     {
+        "type": "IF",
+        "condition": "$keyPress == '1'",
+        "then": [
+          {
+            "type": "SAY",
+            "params": {
+              "text": "You pressed 1."
+            }
+          }
+        ],
+        "orElse": [
+          {
+            "type": "SAY",
+            "params": {
+              "text": "You didn't follow instructions"
+            }
+          }
+        ]
+     },
+     {
+        "type": "SAY",
+        "comment": "This SAY action will be skipped",
+        "params": {
+          "text": "You"
+        }
+     },
+     {
+        "type": "LABEL",
+        "comment": "This is a label to which you navigating",
+        "name": "my_label"
+     }
+  ]
+}
