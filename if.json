@@ -9,7 +9,7 @@
           {
             "type": "SAY",
             "params": {
-              text: "Press one on your phone keypad"
+              "text": "Press one on your phone keypad"
             }
           }
         ],
@@ -44,16 +44,7 @@
         ]
      },
      {
-        "type": "SAY",
-        "comment": "This SAY action will be skipped",
-        "params": {
-          "text": "You"
-        }
-     },
-     {
-        "type": "LABEL",
-        "comment": "This is a label to which you navigating",
-        "name": "my_label"
+        "type": "HANGUP"
      }
   ]
 }
